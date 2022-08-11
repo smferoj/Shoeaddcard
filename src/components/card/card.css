@@ -1,0 +1,162 @@
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.card_container {
+  width:550px;
+  margin: 50% auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10% ;
+  border: 1px solid blue;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0.8rem;
+}
+
+.card_container .image {
+  width: 200px; 
+  height: 200px;
+  overflow: hidden;
+  
+}
+
+.image img {
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.card_details {
+  margin-top: 1.5rem;
+}
+
+.card_details h1 {
+  font-size: 2.5rem;
+}
+
+.star_icon {
+  padding: 0.6rem 0;
+  font-size: 1.5rem;
+}
+
+.product_details{
+  text-align: justify;
+  margin-right: 0.4rem;
+}
+
+.counter {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.counter .number{
+  width: 4rem;
+  margin-right: 2rem;
+  text-align: center;
+}
+.counter article {
+  margin-right: 40px;
+  border: 0.1rem solid rgb(85, 17, 187);
+  padding: 0.4rem 20px;
+  background: transparent;
+  border-radius: 0.6rem;
+  transition: 0.5s;
+  font-size: 1.2rem;
+}
+
+.counter article:hover {
+  background-color: rgb(170, 140, 214);
+}
+
+.option {
+  display: flex;
+  column-gap: 0.8rem;
+  padding: 1rem 0;
+}
+
+.option p {
+  font-size: 1.2rem;
+}
+
+.select {
+  font-size: 1rem;
+}
+
+.color{
+  font-size: 1.2rem;
+}
+
+.color input{
+   margin: 0.5rem;
+}
+
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: gray;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.green:after{
+  background-color: green;
+}
+
+.yellow:after{
+  background-color: yellow;
+}
+
+.red:after{
+  background-color: red;
+}
+
+
+button {
+  margin: 1.5rem 0;
+}
+
+@media(max-width: 824px) {
+  .container{
+    width: 100%;
+  }
+  
+  .card_container {
+    width: 400px;
+     display: flex;
+     flex-direction: column;
+  } 
+ 
+}
+
+@media(max-width: 550px) {
+  .card_container {
+    width: 300px;
+     display: flex;
+     flex-direction: column;
+  }
+  
+ 
+}
